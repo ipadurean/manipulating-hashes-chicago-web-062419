@@ -15,10 +15,10 @@ def first_challenge
 
   #your code here
 contacts.each do |key, value|
-  key.delete_if do |a, b|
-    b == "strawberry"
+  key.each do |a, b|
+    b.delete_if do |el| el == "strawberry"
   end
-
+end
 end
 
   #remember to return your newly altered contacts hash!
