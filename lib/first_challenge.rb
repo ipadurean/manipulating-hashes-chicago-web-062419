@@ -19,6 +19,7 @@ contacts.each do |person, data|
         if value == ["strawberry", "cookie dough", "mint chip"]
           value.delete_if do |flavor|
           flavor == "strawberry"
+        end
 end
 end
 end
